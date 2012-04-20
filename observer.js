@@ -9,9 +9,7 @@ var _m = function(window, document, undefined){
 		if ( !event ) return;
 		var parts = event.split(space),
 			l = parts.length;
-			console.log(l);
 		while ( l-- ) {
-			console.log(parts[l]);
 			_events[parts[l]] = _events[parts[l]] || [];
 			_events[parts[l]].push(fn);
 		};
@@ -54,5 +52,5 @@ var _m = function(window, document, undefined){
 		}
 		return o;
 	}
-
+	return _mod;
 }(this, document)
