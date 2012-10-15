@@ -7,7 +7,7 @@ Change the module pattern for a classical prototypal pattern.
 ## Example of use
 	
 	var pubsub = new PubSub;
-	// Space separated events string or array of events
+	*Space separated events string or array of events
   pubsub.on("event another_event", function(e){
     console.log("Complete event triggered");
   });
