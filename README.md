@@ -7,15 +7,14 @@ Change the module pattern for a classical prototypal pattern.
 ## Example of use
 	
 	var pubsub = new PubSub;
-	
-  pubsub.on("event another_event", function(e){
-    console.log("Event triggered");
-  });
-  pubsub.trigger("complete","another_event");
+  	pubsub.on("event another_event", function(e){
+    		console.log("Event triggered");
+  	});
+  	pubsub.trigger("complete","another_event");
 
 or in array mode
 
-  pubsub.on(["event", "another_event"], function(e){
-    console.log("Event triggered");
-  });
-  pubsub.trigger(["complete","another_event"]);
+  	pubsub.on(["event", "another_event"], function(e){
+    		console.log("Event triggered");
+  	});
+  	pubsub.trigger(["complete","another_event"]);
